@@ -16,6 +16,7 @@ CREATE TABLE Alumnos (
     ap_materno varchar(30),
     matricula varchar(20) not null,
     GrupoID INT NOT NULL,
+    dataset_folder VARCHAR(100),
     FOREIGN KEY (GrupoID) REFERENCES Grupos(GrupoID)
 );
 
